@@ -3,85 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Gentle Acre - AI Protocol Hub</title>
+    <title>The Gentle Acre - AI-Powered Comfort</title>
     <style>
+        :root {
+            /* Resonant Warmth Aesthetic Colors */
+            --color-primary: #8B4513; /* Saddle Brown - Deep Warmth */
+            --color-secondary: #FFDAB9; /* Peach Puff - Soft Light */
+            --color-background: #FAF0E6; /* Linen - Cozy Texture */
+            --color-text: #36454F; /* Charcoal - Clarity */
+            --font-family: 'Georgia', serif;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fcf8f3; /* Soft cream background (Resonant Warmth) */
-            color: #4a2c2a; /* Dark text for contrast */
+            background-color: var(--color-background);
+            color: var(--color-text);
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
-            margin: 0;
             min-height: 100vh;
         }
-        .header {
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
             text-align: center;
-            margin-bottom: 30px;
         }
-        .header h1 {
-            font-size: 1.8em;
+
+        .brand-header {
+            margin-bottom: 40px;
+        }
+
+        .brand-header h1 {
+            font-size: 2.5em;
+            color: var(--color-primary);
             margin-bottom: 5px;
-            color: #a87e5b; /* Key brand color */
         }
-        .link-container {
-            width: 100%;
-            max-width: 450px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+
+        .brand-header p {
+            font-style: italic;
+            font-size: 1.1em;
+            color: var(--color-text);
         }
+
         .link-button {
-            background-color: #a87e5b; /* Brand button color */
-            color: white;
-            text-decoration: none;
+            display: block;
+            width: 100%;
             padding: 15px 20px;
-            border-radius: 8px;
+            margin-bottom: 20px;
+            /* Button Style - Resonant Warmth */
+            background-color: var(--color-primary);
+            color: white;
+            border: 2px solid var(--color-primary);
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.2em;
             font-weight: bold;
-            text-align: center;
-            transition: background-color 0.2s;
-            border: 2px solid #a87e5b;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.1s;
         }
+
         .link-button:hover {
-            background-color: #8c6444;
+            background-color: #A0522D; /* Sienne - Slightly darker for hover */
+            transform: translateY(-2px);
         }
-        .profile-icon {
-            /* Placeholder for your Acre Icon */
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background-color: #e8c9a3; 
-            margin-bottom: 10px;
+
+        .link-button:active {
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="profile-icon"></div> 
-        <h1>The Gentle Acre</h1>
-        <p>AI-Powered Comfort & Guaranteed Simple Protocols</p>
-    </div>
-
-    <div class="link-container">
-        <a href="https://www.thegentleacre.com/one-pan-chicken-sausage-roast" class="link-button" style="background-color: #4a2c2a;">
-            🔥 New: One-Pan Chicken Sausage Roast
-        </a>
+    <div class="container">
+        <header class="brand-header">
+            <h1>The Gentle Acre</h1>
+            <p>Intentional Simplicity, Powered by AI.</p>
+        </header>
         
-        <a href="[PASTE ACRE LITE NETLIFY URL HERE]" class="link-button">
-            🧪 Test Acre Lite (Get a FREE Protocol!)
-        </a>
+        <a class="link-button" href="https://www.thegentleacre.com/one-pan-chicken-sausage-roast">One-Pan Chicken Sausage Roast (Horst's Protocol)</a>
+        <a class="link-button" href="https://www.thegentleacre.com/harvest-moon-soup">Harvest Moon Soup (Grethald's Narrative)</a>
+        <a class="link-button" href="https://www.thegentleacre.com/sunkissed">Sunkissed Lemon & Ginger Smoothie (Phoebe's Clarity)</a>
+        <a class="link-button" href="https://www.thegentleacre.com/ai-transparency">AI Transparency Mandate (Acre's Protocol)</a>
 
-        <a href="https://www.thegentleacre.com/sunkissed" class="link-button">
-            20-Minute Guarantee: Sun-Kissed Chicken Pasta
-        </a>
-
-        <a href="https://www.thegentleacre.com/harvest-moon-soup" class="link-button">
-            Harvest Moon Soup Protocol
-        </a>
-
+        <footer>
+            <p style="font-size: 0.8em; margin-top: 30px; opacity: 0.7;">Eliminating Mealtime Chaos through Strategy and Simplicity.</p>
+        </footer>
     </div>
-
 </body>
 </html>
